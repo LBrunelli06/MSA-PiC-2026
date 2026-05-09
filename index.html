@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Exhibition Archive</title>
+  <title>Still Here: Stories that Shape Glasgow</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --bg: #f7f6f2;
@@ -33,6 +38,7 @@
     }
 
     h1 {
+      font-family: 'Playfair Display', serif;
       font-size: clamp(2.2rem, 6vw, 5rem);
       line-height: 0.95;
       font-weight: 400;
@@ -142,6 +148,24 @@
       max-width: 700px;
     }
 
+    .logo-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      align-items: center;
+      border-top: 1px solid var(--line);
+      padding-top: 24px;
+    }
+
+    .logo-row img {
+      max-height: 55px;
+      max-width: 160px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      filter: grayscale(100%);
+    }
+
     footer {
       max-width: var(--max);
       margin: 0 auto;
@@ -150,39 +174,22 @@
       color: var(--muted);
       font-size: 0.85rem;
     }
-    
-.logo-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
-  align-items: center;
-  border-top: 1px solid var(--line);
-  padding-top: 24px;
-}
 
-.logo-row img {
-  max-height: 55px;
-  max-width: 160px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  filter: grayscale(100%);
-}
     .social-link {
-  margin-top: 24px;
-  font-size: 0.9rem;
-}
+      margin-top: 16px;
+      font-size: 0.9rem;
+    }
 
-.social-link a {
-  color: var(--muted);
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-}
+    .social-link a {
+      color: var(--muted);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
 
-.social-link a:hover {
-  border-bottom: 1px solid var(--muted);
-}
-    
+    .social-link a:hover {
+      border-bottom: 1px solid var(--muted);
+    }
+
     @media (max-width: 760px) {
       header {
         padding-top: 48px;
@@ -199,6 +206,7 @@
     }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Still Here: Stories that Shape Glasgow</h1>
@@ -220,13 +228,14 @@
     <a href="#overview">Overview</a>
     <a href="#panels">Panels</a>
     <a href="#credits">Credits</a>
+    <a href="#logos">Partners</a>
   </nav>
 
   <main>
     <section id="overview">
       <div class="section-title">Overview</div>
-      <img class="hero-image" src="images/exhibition1.jpg" alt="exhibition opening" />
-      <div class="caption">The exhibition opening at Wasps South Block.  </div>
+      <img class="hero-image" src="images/exhibition1.jpg" alt="Exhibition opening at WASPS South Block" />
+      <div class="caption">The exhibition opening at WASPS South Block.</div>
     </section>
 
     <section id="panels">
@@ -265,88 +274,86 @@
           <p>Short description of the panel.</p>
         </article>
 
-               <article class="panel">
+        <article class="panel">
           <h2>Panel 05 — Building / Theme Title</h2>
           <a href="images/B5.jpg" target="_blank">
-            <img src="images/B5.jpg" alt="Panel 04" />
+            <img src="images/B5.jpg" alt="Panel 05" />
           </a>
           <p>Short description of the panel.</p>
         </article>
 
-         <article class="panel">
+        <article class="panel">
           <h2>Panel 06 — Building / Theme Title</h2>
           <a href="images/B6.jpg" target="_blank">
-            <img src="images/B6.jpg" alt="Panel 04" />
+            <img src="images/B6.jpg" alt="Panel 06" />
           </a>
           <p>Short description of the panel.</p>
         </article>
 
-          <article class="panel">
+        <article class="panel">
           <h2>Panel 07 — Building / Theme Title</h2>
           <a href="images/B7.jpg" target="_blank">
-            <img src="images/B7.jpg" alt="Panel 04" />
+            <img src="images/B7.jpg" alt="Panel 07" />
           </a>
           <p>Short description of the panel.</p>
         </article>
 
-        
-          <article class="panel">
+        <article class="panel">
           <h2>Panel 08 — Building / Theme Title</h2>
           <a href="images/B8.jpg" target="_blank">
-            <img src="images/B8.jpg" alt="Panel 04" />
+            <img src="images/B8.jpg" alt="Panel 08" />
           </a>
           <p>Short description of the panel.</p>
         </article>
 
-            <article class="panel">
+        <article class="panel">
           <h2>Panel 09 — Building / Theme Title</h2>
           <a href="images/B9.jpg" target="_blank">
-            <img src="images/B9.jpg" alt="Panel 04" />
+            <img src="images/B9.jpg" alt="Panel 09" />
           </a>
           <p>Short description of the panel.</p>
         </article>
 
-        
-            <article class="panel">
+        <article class="panel">
           <h2>Panel 10 — Building / Theme Title</h2>
           <a href="images/B10.jpg" target="_blank">
-            <img src="images/B10.jpg" alt="Panel 04" />
+            <img src="images/B10.jpg" alt="Panel 10" />
           </a>
           <p>Short description of the panel.</p>
         </article>
-        
       </div>
     </section>
 
     <section id="credits">
       <div class="section-title">Credits</div>
       <div class="credits">
-        Project in the City, Mackintosh School of Architecture, Glasgow School of Art. 
-        With contribution by SAVE Britain's Heritage and Glasgow Building Preservation Trust.
-        Supported by Glasgow City Counctil and Hopkins Architects.
+        Project in the City, Mackintosh School of Architecture, Glasgow School of Art.<br />
+        With contributions by SAVE Britain's Heritage and Glasgow Building Preservation Trust.<br />
+        Supported by Glasgow City Council and Hoskins Architects.
       </div>
     </section>
 
     <section id="logos">
-  <div class="section-title">Partners</div>
+      <div class="section-title">Partners</div>
 
-  <div class="logo-row">
-    <img src="images/msa-logo.png" alt="Mackintosh School of Architecture logo" />
-    <img src="images/gcc-logo.png" alt="Glasgow City Council logo" />
-    <img src="images/hopkins-logo.png" alt="Hopkins Architects logo" />
-    <img src="images/save-logo.png" alt="SAVE Britain's Heritage logo" />
-  </div>
-</section>
-    
+      <div class="logo-row">
+        <img src="images/msa-logo.png" alt="Mackintosh School of Architecture logo" />
+        <img src="images/gcc-logo.png" alt="Glasgow City Council logo" />
+        <img src="images/hoskins-logo.png" alt="Hoskins Architects logo" />
+        <img src="images/save-logo.png" alt="SAVE Britain's Heritage logo" />
+      </div>
+    </section>
   </main>
-  
-<div class="social-link">
-  <a href="https://www.instagram.com/mackintosh.school.architecture/" target="_blank">
-    @mackintosh.school.architecture
-  </a>
-</div>
+
   <footer>
-    © 2026 Project in the City Exhibition archive. Website created for public access via QR code.
+    © 2026 Project in the City exhibition archive. Website created for public access via QR code.
+
+    <div class="social-link">
+      <a href="https://www.instagram.com/mackintosh.school.architecture/" target="_blank">
+        @mackintosh.school.architecture
+      </a>
+    </div>
   </footer>
 </body>
 </html>
+
