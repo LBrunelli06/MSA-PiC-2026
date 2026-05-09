@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exhibition Archive</title>
+  <style>
+    :root {
+      --bg: #f7f6f2;
+      --text: #111;
+      --muted: #666;
+      --line: #d8d6cf;
+      --max: 1100px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    header {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 72px 24px 48px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 6vw, 5rem);
+      line-height: 0.95;
+      font-weight: 400;
+      letter-spacing: -0.05em;
+      margin: 0 0 32px;
+      max-width: 850px;
+    }
+
+    .intro {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 32px;
+      max-width: var(--max);
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .statement {
+      font-size: clamp(1.05rem, 2vw, 1.35rem);
+      max-width: 700px;
+    }
+
+    nav {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 20px 24px;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.9rem;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+
+    nav a:hover {
+      border-bottom: 1px solid var(--text);
+    }
+
+    main {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    section {
+      margin-bottom: 72px;
+    }
+
+    .section-title {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    .hero-image,
+    .panel img {
+      width: 100%;
+      height: auto;
+      display: block;
+      background: #e8e6df;
+    }
+
+    .caption {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+
+    .panel {
+      border-top: 1px solid var(--line);
+      padding-top: 16px;
+    }
+
+    .panel h2 {
+      font-size: 1.05rem;
+      font-weight: 400;
+      margin: 0 0 12px;
+    }
+
+    .panel p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin: 12px 0 0;
+    }
+
+    .credits {
+      border-top: 1px solid var(--line);
+      padding-top: 24px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      max-width: 700px;
+    }
+
+    footer {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 32px 24px 56px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 760px) {
+      header {
+        padding-top: 48px;
+      }
+
+      .intro,
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        gap: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Still Here: Stories that Shape Glasgow</h1>
+
+    <div class="intro">
+      <div class="meta">
+        Exhibition archive<br />
+        WASPS South Block, Glasgow<br />
+        2–17 April 2026
+      </div>
+
+      <div class="statement">
+        This online archive complements the physical model in front of you and shows the panels on each building that were part of the physical exhibition.
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#panels">Panels</a>
+    <a href="#credits">Credits</a>
+  </nav>
+
+  <main>
+    <section id="overview">
+      <div class="section-title">Overview</div>
+      <img class="hero-image" src="images/exhibition1.jpg" alt="exhibition opening" />
+      <div class="caption">The exhibition opening at Wasps South Block.  </div>
+    </section>
+
+    <section id="panels">
+      <div class="section-title">Exhibition panels</div>
+
+      <div class="grid">
+        <article class="panel">
+          <h2>Panel 01 — Building / Theme Title</h2>
+          <a href="images/b1.jpg" target="_blank">
+            <img src="images/b1.jpg" alt="Panel 01" />
+          </a>
+          <p>Short description of the panel. You can include the building name, student group, theme, or project focus.</p>
+        </article>
+
+        <article class="panel">
+          <h2>Panel 02 — Building / Theme Title</h2>
+          <a href="images/b2.jpg" target="_blank">
+            <img src="images/b2.jpg" alt="Panel 02" />
+          </a>
+          <p>Short description of the panel. Click the image to open a larger version.</p>
+        </article>
+
+        <article class="panel">
+          <h2>Panel 03 — Building / Theme Title</h2>
+          <a href="images/b3.jpg" target="_blank">
+            <img src="images/b3.jpg" alt="Panel 03" />
+          </a>
+          <p>Short description of the panel.</p>
+        </article>
+
+        <article class="panel">
+          <h2>Panel 04 — Building / Theme Title</h2>
+          <a href="images/b4.jpg" target="_blank">
+            <img src="images/b4.jpg" alt="Panel 04" />
+          </a>
+          <p>Short description of the panel.</p>
+        </article>
+
+               <article class="panel">
+          <h2>Panel 05 — Building / Theme Title</h2>
+          <a href="images/b5.jpg" target="_blank">
+            <img src="images/b5.jpg" alt="Panel 04" />
+          </a>
+          <p>Short description of the panel.</p>
+        </article>
+
+         <article class="panel">
+          <h2>Panel 06 — Building / Theme Title</h2>
+          <a href="images/b6.jpg" target="_blank">
+            <img src="images/b6.jpg" alt="Panel 04" />
+          </a>
+          <p>Short description of the panel.</p>
+        </article>
+
+          <article class="panel">
+          <h2>Panel 07 — Building / Theme Title</h2>
+          <a href="images/b7.jpg" target="_blank">
+            <img src="images/b7.jpg" alt="Panel 04" />
+          </a>
+          <p>Short description of the panel.</p>
+        </article>
+
+        
+          <article class="panel">
+          <h2>Panel 08 — Building / Theme Title</h2>
+          <a href="images/b8.jpg" target="_blank">
+            <img src="images/b8.jpg" alt="Panel 04" />
+          </a>
+          <p>Short description of the panel.</p>
+        </article>
+
+            <article class="panel">
+          <h2>Panel 09 — Building / Theme Title</h2>
+          <a href="images/b9.jpg" target="_blank">
+            <img src="images/b9.jpg" alt="Panel 04" />
+          </a>
+          <p>Short description of the panel.</p>
+        </article>
+
+        
+            <article class="panel">
+          <h2>Panel 10 — Building / Theme Title</h2>
+          <a href="images/b10.jpg" target="_blank">
+            <img src="images/b10.jpg" alt="Panel 04" />
+          </a>
+          <p>Short description of the panel.</p>
+        </article>
+        
+      </div>
+    </section>
+
+    <section id="credits">
+      <div class="section-title">Credits</div>
+      <div class="credits">
+        Project in the City, Mackintosh School of Architecture, Glasgow School of Art. 
+        With contribution by SAVE Britain's Heritage and Glasgow Building Preservation Trust.
+        Supported by Glasgow City Counctil and Hopkins Architects.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Project in the City Exhibition archive. Website created for public access via QR code.
+  </footer>
+</body>
+</html>
