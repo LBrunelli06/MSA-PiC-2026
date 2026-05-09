@@ -145,12 +145,6 @@
       margin: 0 0 12px;
     }
 
-    .panel p {
-      color: var(--muted);
-      font-size: 0.95rem;
-      margin: 12px 0 0;
-    }
-
     .credits {
       border-top: 1px solid var(--line);
       padding-top: 24px;
@@ -188,26 +182,28 @@
 
     .social-link {
       margin-top: 16px;
-      font-size: 0.9rem;
     }
 
     .social-link a {
-  color: var(--muted);
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
+      color: var(--muted);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+    }
 
     .social-link a:hover {
       border-bottom: 1px solid var(--muted);
     }
 
-.instagram-icon {
-  font-size: 0.95rem;
-  line-height: 1;
-}
+    .social-link img {
+      width: 14px;
+      height: 14px;
+      object-fit: contain;
+      opacity: 0.65;
+    }
+
     @media (max-width: 760px) {
       header {
         padding-top: 48px;
@@ -237,7 +233,7 @@
       </div>
 
       <div class="statement">
-        This online archive complements the physical model in front of you and shows the panels on each building that were part of the physical exhibition.
+       This online archive serves as a digital companion to the physical model, presenting the panels displayed on each building as part of the exhibition.
       </div>
     </div>
   </header>
@@ -361,7 +357,7 @@
       <div class="logo-row">
         <img src="images/msa-logo.png" alt="Mackintosh School of Architecture logo" />
         <img src="images/gcc-logo.png" alt="Glasgow City Council logo" />
-        <img src="images/hopkins-logo.png" alt="Hopkins Architects logo" />
+        <img src="images/hopkins-logo.png" alt="Hoskins Architects logo" />
         <img src="images/save-logo.png" alt="SAVE Britain's Heritage logo" />
       </div>
     </section>
@@ -371,11 +367,11 @@
     © 2026 Project in the City exhibition archive. Website created for public access via QR code.
 
     <div class="social-link">
-  <a href="https://www.instagram.com/mackintosh.school.architecture/" target="_blank">
-    <span class="instagram-icon">◎</span>
-    @mackintosh.school.architecture
-  </a>
-</div>
+      <a href="https://www.instagram.com/mackintosh.school.architecture/" target="_blank">
+        <img src="images/instagram-logo.png" alt="Instagram logo" />
+        @mackintosh.school.architecture
+      </a>
+    </div>
   </footer>
 </body>
 </html>
