@@ -150,7 +150,25 @@
       color: var(--muted);
       font-size: 0.85rem;
     }
+    
+.logo-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: center;
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+}
 
+.logo-row img {
+  max-height: 55px;
+  max-width: 160px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+}
+    
     @media (max-width: 760px) {
       header {
         padding-top: 48px;
@@ -294,6 +312,18 @@
         Supported by Glasgow City Counctil and Hopkins Architects.
       </div>
     </section>
+
+    <section id="logos">
+  <div class="section-title">Partners</div>
+
+  <div class="logo-row">
+    <img src="images/gsa-logo.png" alt="Glasgow School of Art logo" />
+    <img src="images/gcc-logo.png" alt="Glasgow City Council logo" />
+    <img src="images/hoskins-logo.png" alt="Hoskins Architects logo" />
+    <img src="images/save-logo.png" alt="SAVE Britain's Heritage logo" />
+  </div>
+</section>
+    
   </main>
 
   <footer>
