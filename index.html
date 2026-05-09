@@ -192,15 +192,22 @@
     }
 
     .social-link a {
-      color: var(--muted);
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-    }
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
 
     .social-link a:hover {
       border-bottom: 1px solid var(--muted);
     }
 
+.instagram-icon {
+  font-size: 0.95rem;
+  line-height: 1;
+}
     @media (max-width: 760px) {
       header {
         padding-top: 48px;
@@ -364,10 +371,11 @@
     © 2026 Project in the City exhibition archive. Website created for public access via QR code.
 
     <div class="social-link">
-      <a href="https://www.instagram.com/mackintosh.school.architecture/" target="_blank">
-        @mackintosh.school.architecture
-      </a>
-    </div>
+  <a href="https://www.instagram.com/mackintosh.school.architecture/" target="_blank">
+    <span class="instagram-icon">◎</span>
+    @mackintosh.school.architecture
+  </a>
+</div>
   </footer>
 </body>
 </html>
