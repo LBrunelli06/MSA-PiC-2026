@@ -20,18 +20,18 @@
 
     * {
       box-sizing: border-box;
-    
+    }
 
-   body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--bg);
-  background-image: url("images/texture.png");
-  background-repeat: repeat;
-  background-size: 600px auto;
-  color: var(--text);
-  line-height: 1.5;
-}
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--bg);
+      background-image: url("images/texture.png");
+      background-repeat: repeat;
+      background-size: 600px auto;
+      color: var(--text);
+      line-height: 1.5;
+    }
 
     header {
       max-width: var(--max);
@@ -63,7 +63,7 @@
     }
 
     .statement {
-      font-size: clamp(0.95rem, 1.5vw, 1.00rem);
+      font-size: clamp(0.95rem, 1.5vw, 1rem);
       max-width: 700px;
     }
 
@@ -146,6 +146,19 @@
       font-size: 1.05rem;
       font-weight: 400;
       margin: 0 0 12px;
+    }
+
+    .form-box {
+      margin-top: 24px;
+      border-top: 1px solid var(--line);
+      padding-top: 24px;
+    }
+
+    .form-box iframe {
+      width: 100%;
+      min-height: 650px;
+      border: 1px solid var(--line);
+      background: #fff;
     }
 
     .credits {
@@ -245,6 +258,7 @@
   <nav>
     <a href="#overview">Overview</a>
     <a href="#panels">Panels</a>
+    <a href="#comments">Comments</a>
     <a href="#credits">Credits</a>
     <a href="#logos">Partners</a>
   </nav>
@@ -343,6 +357,34 @@
             <img src="images/B10.jpg" alt="Panel 10" />
           </a>
         </article>
+      </div>
+    </section>
+
+    <section id="comments">
+      <div class="section-title">Comments</div>
+
+      <div class="overview-text">
+        <p>
+          We would be very pleased to hear your thoughts on the exhibition, the buildings,
+          and the questions raised by the students’ work.
+        </p>
+
+        <p>
+          Comments are collected through Microsoft Forms and will be stored securely for
+          teaching, research and public engagement purposes.
+        </p>
+      </div>
+
+      <div class="form-box">
+        <iframe 
+          src="<iframe width="640px" height="480px" src="https://forms.microsoft.com/Pages/ResponsePage.aspx?id=WHn5Z1EhE0W9IXDN5jJ2i448ApXvBk9FnWWU-0HZOwNUMFpXREowWEtJVDZWUVQ4WUUxNUFRVUVaSC4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>"
+          width="100%" 
+          height="650" 
+          frameborder="0" 
+          marginwidth="0" 
+          marginheight="0">
+          Loading…
+        </iframe>
       </div>
     </section>
 
